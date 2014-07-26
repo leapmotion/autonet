@@ -18,7 +18,7 @@
 */
 
 angular.module('autoNetApp')
-.factory('websocket', ['$rootScope', 'WEBSOCKET_PORT', function($rootScope, WEBSOCKET_PORT) {
+.factory('websocket', ['$rootScope', 'info', function($rootScope, info) {
 
   // A single event from the server
   function Message(name,args) {
@@ -43,7 +43,7 @@ angular.module('autoNetApp')
   // Initialize connection with AutoNetServer
   // Called with SetInterval one a second when disconnected from server
   var InitConnection = function() {
-    socket = new WebSocket('ws://localhost:' + WEBSOCKET_PORT);
+    socket = new WebSocket('ws://localhost:' + info.websocket_port);
 
     // emit a angular event when receive a server event
     socket.onmessage = function(evt) {

@@ -10,7 +10,11 @@ angular.module('autoNetApp', [
 ])
 
 // Constants and Values
-.constant('WEBSOCKET_PORT', 8000)
+.constant('info', {
+  version: '0.0.15',
+  deploy_date: '7/25/14',
+  websocket_port: 8000
+})
 
 //Configurations
 .config(['$routeProvider', function ($routeProvider) {
