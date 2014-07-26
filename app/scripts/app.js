@@ -11,7 +11,7 @@ angular.module('autoNetApp', [
 
 // Constants and Values
 .constant('info', {
-  version: '0.0.15',
+  version: '0.0.17',
   deploy_date: '7/25/14',
   websocket_port: 8000
 })
