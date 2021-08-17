@@ -1,3 +1,5 @@
+# Archived and read-only as of 2021-08-17. Use at own risk. #
+
 # Autonet Visualizer Client
 
 ## Overview
